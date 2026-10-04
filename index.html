@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>عيد ميلاد سعيد 🎂</title>
+
+<style>
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+
+    font-family:
+        "Cairo",
+        "Tahoma",
+        Arial,
+        sans-serif;
+
+    color: #f4f7fb;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(36, 68, 110, .45),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(80, 47, 105, .35),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #05080d,
+            #0a111c,
+            #111827
+        );
+}
+
+
+/* =========================================================
+   STARS
+========================================================= */
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    opacity: .5;
+
+    animation:
+        twinkle
+        3s
+        ease-in-out
+        infinite;
+}
+
+@keyframes twinkle {
+
+    0%,100% {
+        opacity: .2;
+        transform: scale(.7);
+    }
+
+    50% {
+        opacity: .9;
+        transform: scale(1.4);
+    }
+
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    z-index: 2;
+}
+
+.screen.active {
+    display: flex;
+
+    animation:
+        screenIn
+        .7s
+        ease;
+}
+
+@keyframes screenIn {
+
+    from {
+        opacity: 0;
+        transform: scale(.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.card {
+
+    width: min(760px, 94vw);
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    padding: 48px 38px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18, 27, 40, .94),
+            rgba(8, 13, 22, .97)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.09);
+
+    box-shadow:
+        0 30px 100px rgba(0,0,0,.55),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    text-align: center;
+
+    scrollbar-width: thin;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.small-label {
+
+    color: #8497ad;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 14px;
+
+}
+
+.birthday-title {
+
+    font-size:
+        clamp(43px, 10vw, 78px);
+
+    font-weight: 900;
+
+    line-height: 1.15;
+
+    color: #f4f7fb;
+
+    text-shadow:
+        0 0 30px rgba(115,160,210,.25);
+
+}
+
+.birthday-title span {
+
+    display: block;
+
+    color: #7fa8d6;
+
+    font-size:
+        clamp(35px, 8vw, 62px);
+
+}
+
+.age {
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+
+    margin: 25px auto;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #203650,
+            #0e1725
+        );
+
+    border:
+        1px solid #4c7097;
+
+    box-shadow:
+        0 0 35px rgba(73,120,170,.18);
+
+    font-size: 42px;
+
+    font-weight: 900;
+
+    color: #bcd5ee;
+
+}
+
+.subtitle {
+
+    color: #9baabd;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button {
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+}
+
+.open-button {
+
+    position: relative;
+
+    border: none;
+
+    padding: 15px 45px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #31577f,
+            #203b5a
+        );
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.3);
+
+    transition: .25s;
+
+}
+
+.open-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 40px rgba(51,93,135,.3);
+
+}
+
+.open-button:active {
+
+    transform:
+        scale(.97);
+
+}
+
+
+/* =========================================================
+   YOUNGER HIM
+========================================================= */
+
+.younger-scene {
+
+    min-height: 310px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ground */
+
+.ground {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+    right: 0;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #33465b,
+            transparent
+        );
+
+}
+
+
+/* little boy */
+
+.boy {
+
+    position: relative;
+
+    width: 120px;
+
+    height: 230px;
+
+    animation:
+        boyIdle
+        3s
+        ease-in-out
+        infinite;
+
+    transition:
+        2.2s
+        cubic-bezier(.4,0,.2,1);
+
+}
+
+@keyframes boyIdle {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+}
+
+
+/* head */
+
+.head {
+
+    position: absolute;
+
+    top: 10px;
+
+    left: 25px;
+
+    width: 70px;
+
+    height: 78px;
+
+    border-radius:
+        45%
+        45%
+        48%
+        48%;
+
+    background: #b97850;
+
+    z-index: 3;
+
+}
+
+
+/* hair */
+
+.hair {
+
+    position: absolute;
+
+    top: 2px;
+
+    left: 20px;
+
+    width: 80px;
+
+    height: 42px;
+
+    border-radius:
+        55%
+        55%
+        30%
+        20%;
+
+    background: #171a20;
+
+    z-index: 4;
+
+}
+
+.hair:after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 28px;
+    height: 18px;
+
+    left: 3px;
+    top: 20px;
+
+    background: #171a20;
+
+    border-radius: 50%;
+
+}
+
+
+/* eyes */
+
+.eye {
+
+    position: absolute;
+
+    top: 40px;
+
+    width: 7px;
+    height: 9px;
+
+    background: #111;
+
+    border-radius: 50%;
+
+    z-index: 5;
+
+}
+
+.eye.left {
+    left: 20px;
+}
+
+.eye.right {
+    right: 20px;
+}
+
+
+/* smile */
+
+.smile {
+
+    position: absolute;
+
+    left: 27px;
+
+    top: 56px;
+
+    width: 17px;
+
+    height: 8px;
+
+    border-bottom:
+        2px solid #552d25;
+
+    border-radius: 50%;
+
+    z-index: 5;
+
+}
+
+
+/* neck */
+
+.neck {
+
+    position: absolute;
+
+    top: 83px;
+
+    left: 47px;
+
+    width: 26px;
+
+    height: 25px;
+
+    background: #a96745;
+
+}
+
+
+/* shirt */
+
+.shirt {
+
+    position: absolute;
+
+    top: 96px;
+
+    left: 20px;
+
+    width: 80px;
+
+    height: 82px;
+
+    border-radius:
+        18px
+        18px
+        8px
+        8px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #263e59,
+            #172536
+        );
+
+}
+
+
+/* shirt detail */
+
+.shirt:after {
+
+    content: "19";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 20px;
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: 900;
+
+    color: #6f91b5;
+
+}
+
+
+/* arms */
+
+.arm {
+
+    position: absolute;
+
+    top: 105px;
+
+    width: 18px;
+
+    height: 70px;
+
+    background: #b97850;
+
+    border-radius: 20px;
+
+    z-index: -1;
+
+}
+
+.arm.left {
+    left: 8px;
+    transform: rotate(12deg);
+}
+
+.arm.right {
+    right: 8px;
+    transform: rotate(-12deg);
+}
+
+
+/* legs */
+
+.leg {
+
+    position: absolute;
+
+    top: 172px;
+
+    width: 23px;
+
+    height: 57px;
+
+    background: #101721;
+
+    border-radius: 8px;
+
+}
+
+.leg.left {
+    left: 34px;
+}
+
+.leg.right {
+    right: 34px;
+}
+
+
+/* shoes */
+
+.shoe {
+
+    position: absolute;
+
+    top: 218px;
+
+    width: 35px;
+
+    height: 13px;
+
+    border-radius: 10px;
+
+    background: #080a0e;
+
+}
+
+.shoe.left {
+    left: 20px;
+}
+
+.shoe.right {
+    right: 20px;
+}
+
+
+/* =========================================================
+   SPEECH
+========================================================= */
+
+.speech {
+
+    position: relative;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    line-height: 2;
+
+}
+
+.speech strong {
+
+    color: #d9e9f8;
+
+}
+
+
+/* =========================================================
+   CHOICES
+========================================================= */
+
+.choice-row {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+
+}
+
+.choice {
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    padding: 12px 30px;
+
+    border-radius: 10px;
+
+    background: #172334;
+
+    color: #e6edf5;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    transition: .25s;
+
+}
+
+.choice:hover {
+
+    background: #243852;
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================================================
+   PLEASE
+========================================================= */
+
+.please {
+
+    margin-top: 22px;
+
+    color: #a9bed5;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    animation:
+        pleasePulse
+        1.2s
+        infinite;
+
+}
+
+@keyframes pleasePulse {
+
+    0%,100% {
+        opacity: .55;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.question-number {
+
+    color: #7089a3;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+}
+
+.question {
+
+    font-size:
+        clamp(23px, 5vw, 34px);
+
+    font-weight: 900;
+
+    color: #eef4fa;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+}
+
+.question-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+.answer {
+
+    min-width: 120px;
+
+    border: 1px solid #344b65;
+
+    padding: 14px 30px;
+
+    border-radius: 10px;
+
+    background:
+        #152233;
+
+    color: #eaf2f9;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    transition: .25s;
+
+}
+
+.answer:hover {
+
+    background:
+        #253b55;
+
+    border-color:
+        #648bb2;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =========================================================
+   REACTION
+========================================================= */
+
+.reaction {
+
+    margin-top: 25px;
+
+    min-height: 50px;
+
+    padding: 17px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(90,120,150,.09);
+
+    border:
+        1px solid rgba(120,160,200,.13);
+
+    color: #cbd8e5;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    animation:
+        reactionIn
+        .5s
+        ease;
+
+}
+
+@keyframes reactionIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(12px)
+            scale(.97);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+.next {
+
+    margin-top: 17px;
+
+    border: none;
+
+    padding: 10px 28px;
+
+    border-radius: 9px;
+
+    background: #334f6d;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================================
+   WALK AWAY
+========================================================= */
+
+.walk-away {
+
+    transform:
+        translateX(110vw);
+
+    animation:
+        none;
+
+}
+
+
+/* =========================================================
+   LETTER INTRO
+========================================================= */
+
+.letter-icon {
+
+    font-size: 70px;
+
+    margin-bottom: 10px;
+
+}
+
+.letter-title {
+
+    font-size:
+        clamp(27px, 6vw, 40px);
+
+    font-weight: 900;
+
+    line-height: 1.5;
+
+    color: #e9f1f8;
+
+}
+
+.letter-sub {
+
+    color: #91a2b5;
+
+    margin-top: 12px;
+
+    margin-bottom: 25px;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   LETTER
+========================================================= */
+
+.letter-paper {
+
+    text-align: right;
+
+    padding: 35px 30px;
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #e8e1d3,
+            #d9d0bf
+        );
+
+    color: #292822;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.45);
+
+    position: relative;
+
+    transform:
+        rotate(-.5deg);
+
+    animation:
+        letterOpen
+        1s
+        ease;
+
+}
+
+@keyframes letterOpen {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(35px)
+            rotate(-3deg)
+            scale(.94);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            rotate(-.5deg)
+            scale(1);
+
+    }
+
+}
+
+.letter-paper:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border:
+        1px solid rgba(80,70,50,.18);
+
+    pointer-events: none;
+
+}
+
+.letter-heading {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
+
+    color: #302d27;
+
+}
+
+.letter-text {
+
+    font-family:
+        "Cairo",
+        sans-serif;
+
+    font-size: 17px;
+
+    line-height: 2.25;
+
+    white-space: pre-line;
+
+}
+
+.signature {
+
+    margin-top: 25px;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    text-align: left;
+
+}
+
+
+/* =========================================================
+   FINAL
+========================================================= */
+
+.final-message {
+
+    margin-top: 25px;
+
+    color: #aab8c8;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+}
+
+.final-message strong {
+
+    color: #d8e6f4;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px) {
+
+    .screen {
+        padding: 12px;
+    }
+
+    .card {
+        padding:
+            35px
+            18px;
+
+        max-height: 94vh;
+    }
+
+    .birthday-title {
+        font-size: 43px;
+    }
+
+    .birthday-title span {
+        font-size: 35px;
+    }
+
+    .boy {
+        transform: scale(.9);
+    }
+
+    .question-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .answer {
+        width: 100%;
+    }
+
+    .letter-paper {
+        padding: 28px 20px;
+    }
+
+    .letter-text {
+        font-size: 15px;
+        line-height: 2.1;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     STARS
+========================================================= -->
+
+<div class="stars" id="stars"></div>
+
+
+<!-- =========================================================
+     SCREEN 1 — BIRTHDAY
+========================================================= -->
+
+<section
+class="screen active"
+id="birthdayScreen">
+
+    <div class="card">
+
+        <div class="small-label">
+            ٢٠٢٦ • يومك الكبير
+        </div>
+
+        <h1 class="birthday-title">
+
+            عيد ميلاد سعيد
+
+            <span>
+                يا ابن الـ ١٩ 🎂
+            </span>
+
+        </h1>
+
+        <div class="age">
+            19
+        </div>
+
+        <p class="subtitle">
+
+            سنة جديدة بدأت...
+            <br>
+            لكن قبل أن تكمل يومك،
+            هناك شيء ينتظرك.
+
+        </p>
+
+        <button
+        class="open-button"
+        onclick="openBirthday()">
+
+            افتح 🎁
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 2 — YOUNGER HIM
+========================================================= -->
+
+<section
+class="screen"
+id="youngerScreen">
+
+    <div class="card">
+
+        <div class="younger-scene">
+
+            <div class="boy" id="boy">
+
+                <div class="hair"></div>
+
+                <div class="head">
+
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+
+                    <div class="smile"></div>
+
+                </div>
+
+                <div class="neck"></div>
+
+                <div class="shirt"></div>
+
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+
+                <div class="shoe left"></div>
+                <div class="shoe right"></div>
+
+            </div>
+
+            <div class="ground"></div>
+
+        </div>
+
+
+        <div class="speech">
+
+            <strong>
+                أهلاً... 👋
+            </strong>
+
+            <br><br>
+
+            هذا أنت...
+            عندما كنت أصغر. 🥹
+
+            <br><br>
+
+            عندي لك شوية أسئلة
+            عن حياتك الجديدة.
+
+            <br>
+
+            هل ستجيبني عليها؟
+
+        </div>
+
+
+        <div
+        class="choice-row"
+        id="introChoices">
+
+            <button
+            class="choice"
+            onclick="startQuestions()">
+
+                أكيد، يلا 😎
+
+            </button>
+
+            <button
+            class="choice"
+            onclick="sayPlease()">
+
+                لا، آسف 😂
+
+            </button>
+
+        </div>
+
+
+        <div
+        id="pleaseArea">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 3 — QUESTIONS
+========================================================= -->
+
+<section
+class="screen"
+id="questionScreen">
+
+    <div class="card">
+
+        <div
+        class="question-number"
+        id="questionNumber">
+
+            السؤال ١ من ٥
+
+        </div>
+
+
+        <div
+        class="question"
+        id="questionText">
+        </div>
+
+
+        <div
+        class="question-buttons"
+        id="questionButtons">
+
+        </div>
+
+
+        <div
+        id="reactionArea">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 4 — BOY LEAVES
+========================================================= -->
+
+<section
+class="screen"
+id="leavingScreen">
+
+    <div class="card">
+
+        <div class="younger-scene">
+
+            <div
+            class="boy"
+            id="leavingBoy">
+
+                <div class="hair"></div>
+
+                <div class="head">
+
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+
+                    <div class="smile"></div>
+
+                </div>
+
+                <div class="neck"></div>
+
+                <div class="shirt"></div>
+
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+
+                <div class="shoe left"></div>
+                <div class="shoe right"></div>
+
+            </div>
+
+            <div class="ground"></div>
+
+        </div>
+
+
+        <div class="speech">
+
+            شكراً يا أنا الكبير
+            على الإجابة على أسئلتي. 😂
+
+            <br><br>
+
+            الآن عندي أشياء كثيرة أفكر فيها...
+
+            <br><br>
+
+            <strong>
+                لازم أروح. أشوفك بعدين! 👋
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 5 — LETTER
+========================================================= -->
+
+<section
+class="screen"
+id="letterQuestionScreen">
+
+    <div class="card">
+
+        <div class="letter-icon">
+            ✉️
+        </div>
+
+        <div class="letter-title">
+
+            انتظر...
+
+            <br>
+
+            ترك لك أنت الصغير رسالة.
+
+        </div>
+
+        <div class="letter-sub">
+
+            يبدو أنه كان يريد أن يقول لك شيئاً
+            قبل أن يذهب.
+
+        </div>
+
+        <button
+        class="open-button"
+        onclick="openLetter()">
+
+            هل تريد قراءتها؟
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SCREEN 6 — LETTER
+========================================================= -->
+
+<section
+class="screen"
+id="letterScreen">
+
+    <div class="card">
+
+        <div class="letter-paper">
+
+            <div class="letter-heading">
+
+                إلى أنا عندما أصبح ١٩ سنة...
+
+            </div>
+
+            <div class="letter-text">
+
+مرحباً يا أنا الكبير.
+
+إذا كنت تقرأ هذه الرسالة،
+فهذا يعني أنك كبرت فعلاً.
+
+أنا لا أعرف كيف أصبحت الآن،
+ولا أعرف كيف تغيّرت،
+ولا أعرف إذا حققت كل الأشياء
+التي كنت أتخيلها وأنا صغير.
+
+لكن عندي سؤال واحد فقط:
+
+هل أنت سعيد؟
+
+أتمنى أنك لم تكبر لدرجة أنك
+نسيت كيف تفرح بالأشياء الصغيرة.
+
+أتمنى أنك ما زلت تضحك بصوت عالٍ
+على الأشياء الغبية،
+وما زلت تتحمس للأشياء التي تحبها،
+وما زلت عندك أحلام حتى لو
+بعضها تغيّر مع الوقت.
+
+إذا لم تحقق كل أحلامنا،
+فلا بأس.
+
+يمكنك أن تبدأ من جديد.
+
+وإذا تغيرت عن الشخص
+الذي كنت أتخيله...
+
+فلا بأس أيضاً.
+
+أنا فقط أتمنى أنك أصبحت
+الشخص الذي كنت أحتاجه
+وأنا صغير.
+
+الشخص الذي لا يخاف من المستقبل.
+
+الشخص الذي يعرف أن الفشل
+ليس نهاية القصة.
+
+والشخص الذي ينظر إلى نفسه
+ويقول:
+
+"أنا فخور بنفسي."
+
+وأخيراً...
+
+عيد ميلاد سعيد يا أنا.
+
+شكراً لأنك أوصلتنا إلى هنا.
+
+لا تنساني،
+لأني كنت أول شخص
+يحلم بالحياة التي تعيشها الآن. ❤️
+
+            </div>
+
+            <div class="signature">
+
+                — أنا الصغير،
+                قبل أن أصبح أنت.
+
+            </div>
+
+        </div>
+
+
+        <div class="final-message">
+
+            <strong>
+                عيد ميلاد سعيد مرة ثانية. 🎂
+            </strong>
+
+            <br>
+
+            ١٩ سنة ليست النهاية...
+
+            <br>
+
+            هذه مجرد بداية القصة.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* =========================================================
+   STARS
+========================================================= */
+
+const starsContainer =
+    document.getElementById("stars");
+
+for(let i = 0; i < 90; i++) {
+
+    const star =
+        document.createElement("div");
+
+    star.className = "star";
+
+    star.style.left =
+        Math.random() * 100 + "%";
+
+    star.style.top =
+        Math.random() * 100 + "%";
+
+    star.style.animationDelay =
+        Math.random() * 4 + "s";
+
+    star.style.animationDuration =
+        2 + Math.random() * 4 + "s";
+
+    starsContainer.appendChild(star);
+}
+
+
+/* =========================================================
+   SCREEN SWITCH
+========================================================= */
+
+function showScreen(id) {
+
+    document
+        .querySelectorAll(".screen")
+        .forEach(screen => {
+
+            screen.classList.remove("active");
+
+        });
+
+    document
+        .getElementById(id)
+        .classList.add("active");
+}
+
+
+/* =========================================================
+   OPEN BIRTHDAY
+========================================================= */
+
+function openBirthday() {
+
+    showScreen("youngerScreen");
+
+}
+
+
+/* =========================================================
+   NO → PLEASE
+========================================================= */
+
+function sayPlease() {
+
+    document
+        .getElementById("introChoices")
+        .style.display = "none";
+
+    document
+        .getElementById("pleaseArea")
+        .innerHTML = `
+
+        <div class="please">
+
+            طيبببببب 😭
+
+            <br>
+
+            بلييييز بلييييز بلييييز 🥺
+
+            <br>
+
+            جاوبني بس على الأسئلة!
+
+            <br><br>
+
+            <button
+            class="choice"
+            onclick="startQuestions()">
+
+                خلاص، أوكي 😂
+
+            </button>
+
+        </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   QUESTIONS DATA
+========================================================= */
+
+const questions = [
+
+    {
+        question:
+        "هل أصبحت لاعب كرة قدم بعد؟ ⚽",
+
+        yes:
+        "مبرووووووك! 😭⚽ أخيراً! كنت أعرف أنك ستصل إليها.",
+
+        no:
+        "أوووووووووه 😭 لم تصبح؟ أعتقد أن لديك شيئاً أفضل إذن... 👀"
+    },
+
+    {
+        question:
+        "هل عندك حبيبة؟ هههههههه 👀❤️",
+
+        yes:
+        "وااااااو! غيييييييد جداً 😂❤️ أنا سعيد لك!",
+
+        no:
+        "أوووووه 😭 متى سنجد لك واحدة إذن؟ ههههههه"
+    },
+
+    {
+        question:
+        "هل حصلت أخيراً على الشعر الذي كنت تحلم به؟ 💇‍♂️",
+
+        yes:
+        "OMG FINALLYYYYYY 😭🔥 أخيراً حصلت على الشعر الذي كنت تريده!",
+
+        no:
+        "حاول مرة ثانية 😂💀 لا تستسلم، الشعر لا يزال ينتظرك."
+    },
+
+    {
+        question:
+        "هل أصبحت طويلاً؟ 📏",
+
+        yes:
+        "أخيراً! 😭😂 لم نعد قصاراً بعد الآن! أنا فخور بك.",
+
+        no:
+        "OMG ما زلنا قصاراً؟ 😭💀 يا رجل، ما زال لدينا أمل."
+    },
+
+    {
+        question:
+        "هل أنت سعيد لأنك أصبحت ١٩ سنة؟ لأنني سعيد جداً لأنك وصلت إليها. ❤️",
+
+        yes:
+        "عِشها بسعادة! ❤️ أنت تستحق سنة جميلة جداً.",
+
+        no:
+        "إذن كن سعيداً يا غبي 😂❤️ هذه سنة جديدة، حاول تستمتع بها!"
+    }
+
+];
+
+
+/* =========================================================
+   QUESTION STATE
+========================================================= */
+
+let currentQuestion = 0;
+
+
+/* =========================================================
+   START QUESTIONS
+========================================================= */
+
+function startQuestions() {
+
+    currentQuestion = 0;
+
+    showScreen("questionScreen");
+
+    displayQuestion();
+
+}
+
+
+/* =========================================================
+   DISPLAY QUESTION
+========================================================= */
+
+function displayQuestion() {
+
+    const q =
+        questions[currentQuestion];
+
+    document
+        .getElementById("questionNumber")
+        .innerText =
+        `السؤال ${arabicNumber(currentQuestion + 1)} من ٥`;
+
+    document
+        .getElementById("questionText")
+        .innerText =
+        q.question;
+
+    document
+        .getElementById("reactionArea")
+        .innerHTML = "";
+
+    const buttons =
+        document.getElementById("questionButtons");
+
+    buttons.innerHTML = `
+
+        <button
+        class="answer"
+        onclick="answerQuestion(true)">
+
+            نعم
+
+        </button>
+
+        <button
+        class="answer"
+        onclick="answerQuestion(false)">
+
+            لا
+
+        </button>
+
+    `;
+
+}
+
+
+/* =========================================================
+   ANSWER QUESTION
+========================================================= */
+
+function answerQuestion(answer) {
+
+    const q =
+        questions[currentQuestion];
+
+    const reaction =
+        answer
+            ? q.yes
+            : q.no;
+
+    document
+        .getElementById("questionButtons")
+        .innerHTML = "";
+
+    document
+        .getElementById("reactionArea")
+        .innerHTML = `
+
+        <div class="reaction">
+
+            ${reaction}
+
+            <br>
+
+            <button
+            class="next"
+            onclick="nextQuestion()">
+
+                التالي →
+
+            </button>
+
+        </div>
+
+    `;
+
+}
+
+
+/* =========================================================
+   NEXT QUESTION
+========================================================= */
+
+function nextQuestion() {
+
+    currentQuestion++;
+
+    if(currentQuestion >= questions.length) {
+
+        finishQuestions();
+
+        return;
+
+    }
+
+    displayQuestion();
+
+}
+
+
+/* =========================================================
+   FINISH QUESTIONS
+========================================================= */
+
+function finishQuestions() {
+
+    showScreen("leavingScreen");
+
+    setTimeout(() => {
+
+        const boy =
+            document.getElementById("leavingBoy");
+
+        boy.classList.add("walk-away");
+
+    }, 700);
+
+
+    setTimeout(() => {
+
+        showScreen(
+            "letterQuestionScreen"
+        );
+
+    }, 3300);
+
+}
+
+
+/* =========================================================
+   OPEN LETTER
+========================================================= */
+
+function openLetter() {
+
+    showScreen("letterScreen");
+
+    createConfetti();
+
+}
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+function createConfetti() {
+
+    const pieces = [
+        "✦",
+        "✧",
+        "·",
+        "★",
+        "✦",
+        "⋆"
+    ];
+
+    for(let i = 0; i < 70; i++) {
+
+        const piece =
+            document.createElement("div");
+
+        piece.innerText =
+            pieces[
+                Math.floor(
+                    Math.random() *
+                    pieces.length
+                )
+            ];
+
+        piece.style.position =
+            "fixed";
+
+        piece.style.left =
+            Math.random() * 100 + "vw";
+
+        piece.style.top =
+            "-20px";
+
+        piece.style.zIndex =
+            "20";
+
+        piece.style.fontSize =
+            10 + Math.random() * 20 + "px";
+
+        piece.style.color =
+            [
+                "#ffffff",
+                "#8eb5d9",
+                "#6f8ca8",
+                "#c7d9eb"
+            ][
+                Math.floor(
+                    Math.random() * 4
+                )
+            ];
+
+        piece.style.pointerEvents =
+            "none";
+
+        document.body.appendChild(piece);
+
+
+        const duration =
+            2500 +
+            Math.random() * 3000;
+
+
+        piece.animate(
+
+            [
+                {
+                    transform:
+                        "translateY(0) rotate(0deg)",
+                    opacity: 1
+                },
+
+                {
+                    transform:
+                        `translateY(110vh)
+                         rotate(${Math.random() * 720}deg)`,
+                    opacity: 0
+                }
+            ],
+
+            {
+                duration:
+                    duration,
+
+                easing:
+                    "cubic-bezier(.2,.7,.3,1)"
+            }
+
+        );
+
+
+        setTimeout(
+            () => piece.remove(),
+            duration
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   ARABIC NUMBERS
+========================================================= */
+
+function arabicNumber(number) {
+
+    const numbers = [
+        "٠",
+        "١",
+        "٢",
+        "٣",
+        "٤",
+        "٥",
+        "٦",
+        "٧",
+        "٨",
+        "٩"
+    ];
+
+    return String(number)
+        .split("")
+        .map(
+            n => numbers[n]
+        )
+        .join("");
+
+}
+
+</script>
+
+</body>
+</html>
